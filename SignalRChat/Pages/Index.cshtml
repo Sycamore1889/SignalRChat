@@ -1,6 +1,8 @@
 ﻿@page
+
+
 <h1>THis is the right index file</h1>
-    </br>
+    
 <div id='errors'>
 </div>
 <div id="loading" class="spinner">
@@ -62,18 +64,18 @@
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js'></script>
-<script src='./js/cerner-smart-embeddable-lib-1.0.0.min.js'></script>
+<script src='~/js/cerner-smart-embeddable-lib-1.0.0.min.js'></script>
 
 
 <!-- Application-level javascript-->
-<script src='./css/example-smart-app.css'></script>
+<script src='~/js/example-smart-app.js'></script>
 
 <!-- FHIR Client JS Library -->
-<script src='./js/fhir-client-v0.1.12.js'></script>
+<script src='~/js/fhir-client-v0.1.12.js'></script>
 
 <!-- Prevent session bleed caused by single threaded embedded browser and sessionStorage API -->
 <!-- https://github.com/cerner/fhir-client-cerner-additions -->
-<script src='./js/fhir-client-cerner-additions-1.0.0.js'></script>
+<script src='~/js/fhir-client-cerner-additions-1.0.0.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     extractData().then(
